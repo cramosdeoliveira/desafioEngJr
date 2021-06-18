@@ -34,7 +34,6 @@ export class NovoUsuarioComponent implements OnInit {
         Validators.required,
         Validators.minLength(4)
       ]],
-<<<<<<< HEAD
       userName: ['', [minusculoValidator],[this.usuarioExisteService.usuarioJaExiste()]],
       password: ['',[
         Validators.minLength(5),
@@ -46,11 +45,6 @@ export class NovoUsuarioComponent implements OnInit {
       validators: [usuarioSenhaIguaisValidator]
     }
     )
-=======
-      userName: ['', [minusculoValidator], [this.usuarioExisteService.usuarioJaExiste()]],
-      password: ['']
-    })
->>>>>>> bugfix/erro-verion
   }
 
   cadastrar() {
