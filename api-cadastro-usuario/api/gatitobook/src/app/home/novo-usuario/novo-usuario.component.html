@@ -1,6 +1,6 @@
 <h4 class="text-center">Registre-se e mostre seu pet ao mundo!</h4>
 
-<form class="form mt-4" [formGroup]="novoUsuarioForm" (submit)="cadastrar()">
+<form class="form mt-4" [formGroup]="novoUsuarioForm" (submit)="cadastrar()" #loginForm="ngForm">
 	<div class="form-group">
 		<input placeholder="Email" class="form-control" type="email" formControlName="email">
 		<app-mensagem 
@@ -61,7 +61,7 @@
 		</app-mensagem>			
 	</div>
 
-	<button class="btn btn-primary btn-block">Cadastrar</button>
+	<button class="btn btn-primary btn-block" [disabled]="loginForm.invalid">Cadastrar</button>
 </form>
 
 <p>Já é Usuário? <a [routerLink]="['/home']">Faça login!</a></p>
