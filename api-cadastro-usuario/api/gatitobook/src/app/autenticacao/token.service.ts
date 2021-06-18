@@ -12,7 +12,7 @@ export class TokenService {
   }
 
   salvaToken(token: string) {
-    localStorage.setItem(KEY)
+    localStorage.setItem(KEY, token)
   }
 
   excluiToken() {

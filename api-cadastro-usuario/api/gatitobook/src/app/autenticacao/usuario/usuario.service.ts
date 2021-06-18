@@ -34,7 +34,7 @@ export class UsuarioService {
 
   logout() {
     this.tokenService.excluiToken()
-    this.usuarioSubject.next()
+    this.usuarioSubject.next({})
   }
 
   estaLogado() {
