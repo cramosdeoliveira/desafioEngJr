@@ -18,7 +18,7 @@
 	</div>
 
 	<div class="form-group">
-		<input placeholder="Nome Completo" class="form-control" type="text" formControlName="fullName">
+		<input placeholder="Nome" class="form-control" type="text" formControlName="fullName">
 		<app-mensagem
 				*ngIf="novoUsuarioForm.get('fullName')?.errors &&
 					novoUsuarioForm.get('fullName')?.touched"
@@ -61,7 +61,7 @@
 		</app-mensagem>			
 	</div>
 
-	<button class="btn btn-primary btn-block" type="submit" disabled>Cadastrar</button>
+	<button class="btn btn-primary btn-block">Cadastrar</button>
 </form>
 
 <p>Já é Usuário? <a [routerLink]="['/home']">Faça login!</a></p>
