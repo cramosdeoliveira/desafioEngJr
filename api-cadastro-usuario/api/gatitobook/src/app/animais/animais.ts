@@ -2,6 +2,7 @@ export interface Animal {
   id: number
   postDate: Date
   url: string
+  descripton: string
   allowComments: boolean
   likes: number
   comments: number
