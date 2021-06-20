@@ -22,7 +22,7 @@ export class UsuarioService {
     const usuario = jwt_decode(token) as Usuario
     this.usuarioSubject.next(usuario)
   }
-  
+
   retornaUsuario() {
     return this.usuarioSubject.asObservable()
   }

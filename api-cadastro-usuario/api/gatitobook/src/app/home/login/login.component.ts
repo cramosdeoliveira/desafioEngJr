@@ -24,11 +24,10 @@ export class LoginComponent implements OnInit {
       .subscribe(() => {
         this.router.navigate(['animais'])
       }, (error) => {
-        console.error(error),
         alert('Falha na autenticação');
       }
       )
-    
+
   }
 
 }
