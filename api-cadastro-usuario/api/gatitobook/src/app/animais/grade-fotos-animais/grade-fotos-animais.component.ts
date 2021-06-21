@@ -11,7 +11,6 @@ export class GradeFotosAnimaisComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
