@@ -21,6 +21,18 @@ export class UsuarioService {
     const token = this.tokenService.retornaToken()
     const usuario = jwt_decode(token) as Usuario
     this.usuarioSubject.next(usuario)
+
+    alert(`Meu token JWT:
+      ${token}`);
+    alert(
+      `Dados do usuário:
+        ID: ${usuario.id}
+        NOME: ${usuario.name}
+        EMAIL: ${usuario.email}
+      `
+    );
+
+
   }
 
   retornaUsuario() {
