@@ -16,14 +16,14 @@ const routes: Routes = [
   },
   {
     path: 'animais',
-    loadChildren: () => import('./animais/animais-routing.module').then( (m) => m.AnimaisRoutingModule),
+    loadChildren: () => import('./animais/animais.module').then( (m) => m.AnimaisModule),
     canLoad: [AutenticacaoGuard]
   }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
